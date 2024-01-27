@@ -23,19 +23,18 @@
 ### Шаги для запуска
 1. Клонируйте репозиторий на ваш локальный компьютер:
     ```
-    git clone [URL репозитория]
-    cd [название папки проекта]
+    git clone https://github.com/almazuulu/task_tlcompany.git
+    cd task_tlcompany
     ```
-
-2. Перейдите в папку `docker`:
-    ```
-    cd docker
-    ```
-
-3. Создайте файл `.env` в корне проекта и добавьте в него необходимые переменные окружения:
+2. Создайте файл `.env` в корне проекта и добавьте в него необходимые переменные окружения:
     ```
     GEOCODE_API_KEY=ваш_geocode_api_key
     WEATHER_API_KEY=ваш_weather_api_key
+    ```
+
+3. Перейдите в папку `docker`:
+    ```
+    cd docker
     ```
 
 4. Запустите проект с помощью Docker Compose:
