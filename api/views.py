@@ -54,7 +54,7 @@ def get_weather(request):
         return Response(cache.get(cache_key))
 
     coordinates = get_coords(city_name)
-    if not coordinates:
+    if coordinates is None or None in coordinates:
         return Response({'error': 'Ошибка при определении координат города'}, status=400)
 
     lon, lat = coordinates
